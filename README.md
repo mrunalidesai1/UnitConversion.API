@@ -18,7 +18,10 @@ Requirements
 Run the API
 1. From the repository root run:
    `dotnet run --project UnitConversion.API`
-2. The app will start and expose Swagger UI at `https://localhost:5086/swagger` (port shown in console). Use Swagger or the examples below.
+2.  After the application starts, the console will display the local URL (for example: http://localhost:5086).
+3. The app will start and expose Swagger UI at `https://localhost:5086/swagger` (port shown in console). Use Swagger or the examples below.
+4. Use Swagger to test the available GET and POST conversion endpoints.
+
 
 Run tests
 1. From the repository root run:
@@ -28,7 +31,11 @@ API usage examples
 
 GET example (query params)
 - Request:
-  `GET https://localhost:5001/api/conversion?from=meters&to=feet&value=1`
+   `GET https://localhost:5001/api/conversion?from=meters&to=feet&value=1`
+ parameters:
+ -from:meters
+ -to:feet
+ -value:1
 - Response (200 OK)
   ```json
   {
